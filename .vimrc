@@ -1,4 +1,3 @@
-" This is a text line for testing purposes.
 set textwidth=132 " Set textwidth to Fortran max textwidth for word wrap
 
 set cursorline " Underlines current line
