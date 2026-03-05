@@ -34,11 +34,10 @@ map('v', '<leader>gq', [[:s/"/'/g<CR>]]) -- greedy, no confirm
 map('v', '<leader>gcq', [[:s/"/'/gc]]) -- greedy with confirm
 
 -- LSP keymaps
---map('n', 'K', vim.lsp.buf.hover, {desc = 'Hover'})
---map('n', 'gd', vim.lsp.buf.definition, {desc = 'Go to definition'})
---map('n', 'gr', vim.lsp.buf.reference, {desc = 'References'})
---map('n', 'gi', vim.lsp.buf.implementation, {desc = 'Implementation'})
---map('n', '<leader>rn', vim.lsp.buf.rename, {desc = 'Rename symbol'})
---map('n', '<leader>ca', vim.lsp.buf.code_action, {desc = 'Code action'})
---map('n', '<leader>f', function() vim.lsp.buf.format() end, {desc = 'Format'})
-
+map('n', 'K', vim.lsp.buf.hover, { desc = 'Hover' })
+map('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to definition' })
+--map('n', 'gr', vim.lsp.buf.reference, { desc = 'References' })
+map('n', 'gi', vim.lsp.buf.implementation, { desc = 'Implementation' })
+map('n', '<leader>rn', vim.lsp.buf.rename, { desc = 'Rename symbol' })
+map('n', '<leader>ca', vim.lsp.buf.code_action, { desc = 'Code action' })
+map('n', '<leader>f', function() vim.lsp.buf.format() end, { desc = 'Format' })
